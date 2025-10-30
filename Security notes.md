@@ -13,6 +13,7 @@ This document describes breakdown of how security system is designed and protect
 
 RLS is enabled on all four tables to enforce access control
 
+
 ALTER TABLE customers ENABLE ROW LEVEL SECURITY;
 
 ALTER TABLE orders ENABLE ROW LEVEL SECURITY;
@@ -25,49 +26,52 @@ ALTER TABLE menu_items ENABLE ROW LEVEL SECURITY;
 
 *'customers' table*
 
--Admin: Full access
+Admin: Full access
 
--User: Can only read and insert their own customer record
+User: Can only read and insert their own customer record
 
 *'menu_items' table*
 
--Admin: Full access 
+Admin: Full access 
 
--User: Read-only access
+User: Read-only access
 
 *'orders' table*
 
--Admin: Full access
+Admin: Full access
 
--User: Can only read and insert their own orders
+User: Can only read and insert their own orders
 
 *'order_details' table*
 
--Admin: Full access
+Admin: Full access
 
--User: Can only read and insert items in their own orders
+User: Can only read and insert items in their own orders
+
 
 **Custom Function---Sales’ report generation by Admin**
 
--Returns total daily sales in KES.
+Returns total daily sales in KES.
 
--Accessible only to admins due to RLS enforcement
+Accessible only to admins due to RLS enforcement
+
 
 **Unauthorized Access Prevention**
 
--All policies use auth.uid to verify identity
+- All policies use auth.uid to verify identity
 
--Role checks are performed via 'user_roles' table(‘Admin’ or ‘User’).
+- Role checks are performed via 'user_roles' table(‘Admin’ or ‘User’).
 
--Ownership checks are enforced via ‘customer_auth_map’ table.
+- Ownership checks are enforced via ‘customer_auth_map’ table.
+  
 
 **In Summary, the setup ensures**
 
--Only authenticated users can access data
+- Only authenticated users can access data
 
--Admins have full control
+- Admins have full control
 
--Regular users can only access their own records
+- Regular users can only access their own records
 
--Sensitive operations are encapsulated in secure customized functions
+- Sensitive operations are encapsulated in secure customized functions
 
