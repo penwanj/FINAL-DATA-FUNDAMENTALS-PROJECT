@@ -26,30 +26,32 @@ ALTER TABLE menu_items ENABLE ROW LEVEL SECURITY;
 
 *'customers' table*
 
-Admin: Full access
+Admin      : Full access
 
-User: Can only read and insert their own customer record
+User       : Can only read and insert their own customer record
 
 *'menu_items' table*
 
-Admin: Full access 
+Admin      : Full access 
 
-User: Read-only access
+User       : Read-only access
 
 *'orders' table*
 
-Admin: Full access
+Admin      : Full access
 
-User: Can only read and insert their own orders
+User       : Can only read and insert their own orders
 
 *'order_details' table*
 
-Admin: Full access
+Admin      : Full access
 
-User: Can only read and insert items in their own orders
+User       : Can only read and insert items in their own orders
 
 
-**Custom Function---Sales’ report generation by Admin**
+**Custom Function**
+
+**Sales’ report generation by Admin**
 
 Returns total daily sales in KES.
 
