@@ -24,28 +24,28 @@ ALTER TABLE menu_items ENABLE ROW LEVEL SECURITY;
 
 **Access Policies by Table**
 
-*'customers' table*
+1. *'customers' table*
 
 Admin      : Full access
 
 User       : Can only read and insert their own customer record
 
 
-*'menu_items' table*
+2. *'menu_items' table*
 
 Admin      : Full access 
 
 User       : Read-only access
 
 
-*'orders' table*
+3. *'orders' table*
 
 Admin      : Full access
 
 User       : Can only read and insert their own orders
 
 
-*'order_details' table*
+4. *'order_details' table*
 
 Admin      : Full access
 
