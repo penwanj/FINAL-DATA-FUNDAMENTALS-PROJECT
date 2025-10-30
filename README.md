@@ -172,7 +172,7 @@ This project supports two types of users: **Admins** and **Regular Users**.
 
 ### Security Enforcement
 
-All access is controlled via **Row-Level Security (RLS)**
+All access is controlled via **Row-Level Security (RLS)**.
 
 
 Since **Supabase Auth** has been enabled and sign-in restricted to email/password, only authenticated users can access the database. 
