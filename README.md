@@ -95,6 +95,7 @@ CREATE TABLE customer_auth_map (
 
 -Depending on what Admin and User priviledges are, policies were set via sql statements for the different tables accordingly.
 
+
 For example; to grant Admin full access to 'menu_items' table,
 
 ```sql
