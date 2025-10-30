@@ -30,17 +30,20 @@ Admin      : Full access
 
 User       : Can only read and insert their own customer record
 
+
 *'menu_items' table*
 
 Admin      : Full access 
 
 User       : Read-only access
 
+
 *'orders' table*
 
 Admin      : Full access
 
 User       : Can only read and insert their own orders
+
 
 *'order_details' table*
 
