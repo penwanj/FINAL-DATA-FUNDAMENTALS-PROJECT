@@ -32,6 +32,7 @@ The purpose of this project is to implement user roles, admin privileges, and ba
 ### Tech Stack <a name="tech-stack"></a>
 
 -Supabase
+
 -PostgreSQL
 
 <!-- Features -->
