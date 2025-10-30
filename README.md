@@ -70,7 +70,7 @@ OR
 - The DB is made up of 4 tables, each table having 7 records. 
   
 ### Generate a mapping table
-Create a `customer_auth_map` that links uuid from the auth system to the customer_id via;
+-Create a `customer_auth_map` that links uuid from the auth system to the customer_id via;
 
 CREATE TABLE customer_auth_map (
   user_uid UUID PRIMARY KEY,
@@ -157,7 +157,7 @@ This project supports two types of users: **Admins** and **Regular Users**.
   - Add, update, or remove menu items
   - View all orders and order details
 
-Admin(s) can generate daily sales reports using:
+-Admin(s) can generate daily sales reports using:
 
     ```sql
     SELECT * FROM admin_generate_sales_report();
