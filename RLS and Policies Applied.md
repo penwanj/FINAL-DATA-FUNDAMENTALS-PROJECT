@@ -18,6 +18,7 @@ CREATE TABLE user_roles (
 );
 
 ---RLS Policies by Table and Role(Admin, User)
+
 ----1. customers Table
 --Admin: Full Access
 CREATE POLICY "customers: admin full access"
