@@ -39,9 +39,11 @@ The purpose of this project is to implement user roles, admin privileges, and ba
 
 ### Key Features <a name="key-features"></a>
 
-- **[Tables]**
-- **[Schema]**
+- **[Row Level Security]**
 - **[Policies]**
+- **[Custom Restricted Function]**
+- **[Usage]**
+- **[Security Enforcement]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,7 +153,7 @@ $$;
 This project supports two types of users: **Admins** and **Regular Users**.
 1. Regular Users
 
-- Sign up and log in via Supabase Auth.
+- Sign up and log in via Supabase Auth
 - Automatically linked to a `customer_id` via the `customer_auth_map` table. Can;
   - View and update their customer profile
   - Browse menu items
@@ -159,7 +161,8 @@ This project supports two types of users: **Admins** and **Regular Users**.
   - View their own order history
 
 2. Admins
-- Assigned via the `user_roles` table with role `'admin'`. They can:
+- Sign up and log in via Supabase Auth
+- Assigned via the `user_roles` table with the role `'admin'`. They can:
   - Manage all customer records
   - Add, update, or remove menu items
   - View all orders and order details
