@@ -25,7 +25,8 @@ Final project
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Restaurant Ordering Database] <a name="Purpose of this project is to implement user roles, admin privileges, and basic security rules. Ideally, to manage data access, enforce least privilege, and document the security setup.
+# 📖 [Restaurant Ordering Database]
+The purpose of this project is to implement user roles, admin privileges, and basic security rules. Thus, manage data access, enforce least privilege, and document the security setup.
 "></a>
 
 ## 🛠 Built With <a name="built-with"></a>
