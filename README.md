@@ -88,7 +88,7 @@ Set up Supabase Auth
 Enable Row Level Security (RLS) on all tables.
 
 ### Policies
--Refer to the *RLS and Policies Applied.md* file for all policies applied
+-Refer to the 'RLS and Policies Applied.md' file for all policies applied
 -Depending on what Admin and User priviledges are, policies were set via sql statements for the different tables accordingly.
 
 -For example; to grant Admin full access to 'menu_items' table,
