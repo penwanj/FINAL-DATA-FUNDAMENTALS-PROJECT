@@ -61,7 +61,9 @@ In order to run this project you need:
 ### Setup
 
 -Copy the contents of this Readme.md to your Project's file
+
 OR
+
 -Clone this repository to your desired folder
 
 ### DB Schema
@@ -85,10 +87,12 @@ CREATE TABLE customer_auth_map (
 
 ### Row Level Security
 -Set up Supabase Auth 
+
 -Enable Row Level Security (RLS) on all tables.
 
 ### Policies
 -Refer to the '*RLS and Policies Applied.md*' file for all policies applied
+
 -Depending on what Admin and User priviledges are, policies were set via sql statements for the different tables accordingly.
 
 -For example; to grant Admin full access to 'menu_items' table,
@@ -119,7 +123,8 @@ USING (
 - Can read menu_items but cannot modify them
 
 ### Custom Restricted Function
--An Admin-only Function has been employed that allows Admin(s) to generate daily sales reports in KES (Kenyan Shillings).
+An Admin-only Function has been employed that allows Admin(s) to generate daily sales reports in KES (Kenyan Shillings).
+
 -This function is protected by Row Level Security and only accessible to users with the 'admin' role.
 
 ```sql
