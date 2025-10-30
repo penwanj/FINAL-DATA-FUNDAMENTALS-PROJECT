@@ -59,9 +59,9 @@ In order to run this project you need:
 
 ### Setup
 
-Copy the contents of this Readme.md to your Project's file
+-Copy the contents of this Readme.md to your Project's file
 OR
-Clone this repository to your desired folder
+-Clone this repository to your desired folder
 
 ### DB Schema
 
@@ -78,13 +78,13 @@ CREATE TABLE customer_auth_map (
 );
 
 ### Generate a `user_roles` table 
-This table assigns each user a role (`admin` or `user`)
+-This table assigns each user a role (`admin` or `user`)
 
-Then, populate **user_roles** and **customer_auth_map** for each user.
+-Then, populate **user_roles** and **customer_auth_map** for each user.
 
 ### Row Level Security
-Set up Supabase Auth 
-Enable Row Level Security (RLS) on all tables.
+-Set up Supabase Auth 
+-Enable Row Level Security (RLS) on all tables.
 
 ### Policies
 -Refer to the '*RLS and Policies Applied.md*' file for all policies applied
