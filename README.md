@@ -27,7 +27,6 @@ Final project
 
 # 📖 [Restaurant Ordering Database]
 The purpose of this project is to implement user roles, admin privileges, and basic security rules. Thus, manage data access, enforce least privilege, and document the security setup.
-"></a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -68,8 +67,8 @@ Clone this repository to your desired folder
 ### DB Schema
 
 - The database schema is defined in `schema.sql`.
+- Execute the provided sql statements to generate your tables and their records.
 - The DB is made up of 4 tables, each table having 7 records. 
-- Execute the provided sql statements in `schema.sql` to generate your tables and their records.
   
 ### Generate a mapping table
 Create a `customer_auth_map` that links uuid from the auth system to the customer_id via;
@@ -89,7 +88,7 @@ Set up Supabase Auth
 Enable Row Level Security (RLS) on all tables.
 
 ### Policies
--Refer to the RLS and Policies Applied.md file for all policies applied
+-Refer to the *RLS and Policies Applied.md* file for all policies applied
 -Depending on what Admin and User priviledges are, policies were set via sql statements for the different tables accordingly.
 
 -For example; to grant Admin full access to 'menu_items' table,
@@ -153,7 +152,7 @@ This project supports two types of users: **Admins** and **Regular Users**.
   - Place new orders
   - View their own order history
 
-2.Admins
+2. Admins
 - Assigned via the `user_roles` table with role `'admin'`. They can:
   - Manage all customer records
   - Add, update, or remove menu items
